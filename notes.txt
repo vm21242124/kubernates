@@ -1,0 +1,20 @@
+kubectl get nodes
+
+kubectl run nginx --image=nginx --port=80
+kubectl run nginx --image=nginx --port=80 --replecas=4
+
+
+kubectl apply -f deployement.yml
+
+kubectl get deployments
+kubectl get rs
+
+service is used to expose the pod over the internet
+can be 3 type cluster nodeport loadbalancer
+
+
+kubectl get nodes
+
+kind get clusters
+kind delet clusters kind
+kind create cluster --config config.yml --name=qa
